@@ -149,6 +149,13 @@ section{
     background-size: cover;
 }
 
+#hero1{
+    background: linear-gradient(to right,#1B1F34, rgba(27, 31, 52, 0.0)), url(../img/cover_1.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
 #hero p{
     margin-top: 24px;
     margin-bottom: 24px;
