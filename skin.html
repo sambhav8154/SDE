@@ -130,6 +130,7 @@
     </div>
 </footer>
 <div id="preloader"></div>
+    <a href="#" id="backtotop" class="back-to-top d-flex align-items-center justify-content-center"><i class="ri-arrow-up-line"></i></a>
     <!-- // footer -->
     <a href="https://api.whatsapp.com/send?phone=+919606028698&text=Hello%0Ahow are you" class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
@@ -143,6 +144,18 @@
             document.getElementById("preloader").style.display = "none";
           }
         
+    </script>
+    <script>
+        window.onscroll = function()
+{
+if(pageYOffset >= 100)
+{
+    document.getElementById('backtotop').classList.add('active');
+}else
+{
+    document.getElementById('backtotop').classList.remove('active');
+}
+};
     </script>
 </body>
 
