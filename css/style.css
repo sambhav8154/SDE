@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 :root {
     --bg1: #151828;
     --bg2: #1B1F34;
@@ -9,14 +9,20 @@
 }
 
 body{
-    font-family: "Inter", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Dancing Script', cursive;
     color: var(--body);
     line-height: 1.8;
     background-color: var(--bg1);
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family: "Dela Gothic One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h2,h3,h4,h5,h6{
+    font-family: 'Cedarville Cursive', cursive;
+    color: white;
+}
+
+h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
     color: white;
 }
 
@@ -51,7 +57,7 @@ section{
     color: var(--brand);
 }
 .navbar-brand{
-    font-family: "Dela Gothic One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Dancing Script', cursive;
     font-size: 32px;
 }
 
@@ -143,14 +149,14 @@ section{
 
 /*hero*/
 #hero{
-    background: linear-gradient(to right,#1B1F34, rgba(27, 31, 52, 0.0)), url(../img/wallpaperflare.com_wallpaper.jpg);
+    background: linear-gradient(to right,#1B1F34, rgba(27, 31, 52, 0.0)), url(../img/wallpaperflare.com_wallpaper_5.jpg);
     min-height: 100vh;
     background-position: center;
     background-size: cover;
 }
 
 #hero1{
-    background: linear-gradient(to right,#1B1F34, rgba(27, 31, 52, 0.0)), url(../img/cover_1.jpg);
+    background: linear-gradient(to right,#1B1F34, rgba(27, 31, 52, 0.0)), url(../img/wallpaperflare.com_wallpaper_6.jpg);
     min-height: 100vh;
     background-position: center;
     background-size: cover;
@@ -161,10 +167,18 @@ section{
     margin-bottom: 24px;
 }
 
+#hero .content{
+    margin-left: 50px;
+}
+
+#hero1 .content{
+    margin-left: 50px;
+}
+
 /*BTN*/
 .btn{
     padding: 16px 36px;
-    font-family: "Dela Gothic One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Dancing Script', cursive;
     transition: all 0.4s ease;
     border-radius: 0;
 }
@@ -241,6 +255,12 @@ section{
     margin-bottom: 24px;
 }
 
+#about p{
+    text-align: justify;
+  text-justify: inter-word;
+  
+}
+
 #about .signature{
     width: unset;
 }
@@ -301,6 +321,13 @@ section{
     padding: 32px;
     background-color: var(--bg2);
     position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.review p,h5{
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .review .icon{
@@ -407,6 +434,17 @@ footer{
     background: var(--bg2);
 }
 
+footer h3,h4{
+    font-family: 'Great Vibes', cursive;
+    color: white;
+}
+
+.footer-top .content{
+    text-align: justify;
+  text-justify: inter-word;
+  
+}
+
 .footer-top{
     padding-bottom: 30px;
 }
@@ -417,6 +455,25 @@ footer{
     border-top: 1px solid var(--bg1);
 }
 
+.footer-bottom p a{
+    color: var(--body);
+}
+
+.footer-bottom p a img{
+    width: 30px;
+}
+
+.social-media{
+    padding-top: 5px;
+}
+.social-media img{
+    width: 50px;
+    transition: 0.5s;
+    margin-right: 10px;
+}
+.social-media a:hover img{
+    transform: translateY(-5px);
+}
 
 /*Whatsapp*/
 .float{
