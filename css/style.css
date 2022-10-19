@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 :root {
-    --bg1: #151828;
+     --bg1: #151828;
     --bg2: #1B1F34;
     --body: #959DCC;
     --brand: #FFAB76;
-    --white: #fff;
+    --white: #fff; 
 }
 
 body{
-    font-family: 'Dancing Script', cursive;
-    color: var(--body);
+    font-family: 'Merriweather', serif;
+    color: var(--white);
     line-height: 1.8;
     background-color: var(--bg1);
 }
@@ -60,6 +61,8 @@ section{
     font-family: 'Dancing Script', cursive;
     font-size: 32px;
 }
+
+
 
 /* dropdown */
 
@@ -178,7 +181,7 @@ section{
 /*BTN*/
 .btn{
     padding: 16px 36px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Merriweather', serif;
     transition: all 0.4s ease;
     border-radius: 0;
 }
@@ -300,6 +303,34 @@ section{
     margin-bottom: 18px;
 }
 
+#services .accordion-item{
+    background: var(--bg1);
+    margin: 0;
+    padding: 0;
+}
+
+#services .accordion-item h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+}
+
+#services .accordion-header button{
+    background-color: var(--bg1);
+    color: var(--white);
+}
+
+#services .accordion-header button:hover{
+    color: var(--brand);
+}
+
+#services .rev{
+    padding: 32px;
+    background-color: var(--bg2);
+    position: relative;
+    
+    /* margin-right: 50px; */
+}
+
 /*milestobe*/
 #milestone{
     background: linear-gradient(to right, rgba(27, 31, 52, 0.8), rgba(27, 31, 52, 0.8)), url(../img/wallpaperflare.com_wallpaper_2.jpg);
@@ -321,14 +352,33 @@ section{
     padding: 32px;
     background-color: var(--bg2);
     position: relative;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 110px;
+    margin-right: 110px;
 }
 
-.review p,h5,small{
-    margin-left: 50px;
-    margin-right: 50px;
+@media only screen and (max-width: 990px) {
+    .review{
+        padding: 32px;
+        background-color: var(--bg2);
+        position: relative;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
+
+/* .review p,h5,small{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+@media only screen and (max-width: 990px) {
+    .review p,h5,small{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+} */
+
+
 
 .review .icon{
     width: 42px;
@@ -465,6 +515,7 @@ footer h3,h4{
 
 .social-media{
     padding-top: 5px;
+    padding-bottom: 10px;
 }
 .social-media img{
     width: 50px;
@@ -579,3 +630,68 @@ footer h3,h4{
     visibility: visible;
     opacity: 1;
   } 
+
+  /* academy */
+
+#academy{
+    position: relative;
+    background: var(--bg2);
+
+}
+
+#academy a:hover{
+    background-color: var(--brand);
+    color: var(--white);
+
+}
+
+#academy::after{
+    content: "";
+    width: 25%;
+    height: 100%;
+    background-color: var(--brand);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 990px) {
+    #academy{
+        position: relative;
+        background: var(--bg2);
+    }
+    
+    #academy::after{
+        content: "";
+        width: 25%;
+        height: 100%;
+        background-color: var(--bg1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    #academy h6{
+        color: var(--brand);
+        margin-top: 20px;
+    }
+  }
+
+#academy h6{
+    color: var(--brand);
+}
+
+
+
+#academy h1{
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+#academy p{
+    text-align: justify;
+  text-justify: inter-word;
+  
+}
